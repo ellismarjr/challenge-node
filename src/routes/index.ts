@@ -1,9 +1,8 @@
 import { Router } from 'express';
+import repositoryRouter from './repository.routes';
 
 const routes = Router();
 
-routes.get('/', (request, response) => {
-  return response.json({ message: 'Hello' });
-});
+routes.use('/repositories', repositoryRouter);
 
 export default routes;
