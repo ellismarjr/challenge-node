@@ -3,7 +3,7 @@ import Repository from '../models/Repository';
 interface RepositoryDTO {
   title: string;
   url: string;
-  techs: [];
+  techs: Array<string>;
 }
 
 class RepositoriesRespository {
